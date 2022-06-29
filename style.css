@@ -167,10 +167,23 @@ button {
   cursor: pointer;
 }
 
-a {
+.submit-buttons a {
   text-decoration: none;
   color: #596D48;
   font-weight: bold;
+}
+
+.photo_credit {
+  position: absolute;
+  bottom: 2px;
+  left: 80px;
+  color: white;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.photo_credit a {
+  color: white;
 }
 
 .submit-buttons>p {
@@ -234,6 +247,7 @@ a {
 
 .left-side {
   height: inherit;
+  position: relative;
 }
 
 .right-side {
