@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="left-side">
+    <img class="background-img" src="halie-west-25xggax4bSA-unsplash.jpg"
+      alt="green leaf plant in close up photography">
+    <div class="logo">
+      <img class="odin-img" src="odin-lined.png" alt="odin logo">
+      <div class="logo-text">ODIN</div>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="introduction">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams.</p>
+      <p>Sign up <span class="italic-text">now</span> to get started.</p>
+      <p style="margin-top: 12px;">You <span class="italic-text">know</span> you want to.</p>
+    </div>
+    <form id="sign-up_form" action="http://httpbin.org/post" method="post">
+      <div class="form-message">Let's do this!</div>
+
+      <fieldset>
+        <div>
+          <div class="input-group">
+            <label for="first_name">FIRST NAME</label>
+            <input type="text" id="first_name" name="first_name" placeholder=" " required>
+          </div>
+
+          <div class="input-group">
+            <label for="user_email">EMAIL</label>
+            <input type="email" id="user_email" name="email" placeholder=" " required>
+          </div>
+
+
+          <div class="input-group">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" placeholder=" " required>
+            <span></span>
+          </div>
+        </div>
+
+        <div>
+          <div class="input-group">
+            <label for="last_name">LAST NAME</label>
+            <input type="text" id="last_name" name="last_name" placeholder=" " required>
+          </div>
+
+          <div class="input-group">
+            <label for="phone_number">PHONE NUMBER</label>
+            <input type="tel" id="phone_number" name="phone_number" placeholder=" " required>
+          </div>
+
+          <div class="input-group">
+            <label for="confirm_password">CONFIRM PASSWORD</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder=" " required>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <div class="submit-buttons">
+      <button type="submit" form="sign-up_form">Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+  </div>
+
+  <script>
+    const password = document.querySelector('input[name=password]');
+    const confirm = document.querySelector('input[name=confirm_password]');
+
+    function addError() {
+      if (confirm.value === password.value) {
+        password.className = "";
+      } else {
+        password.classList.add("error");
+      }
+    }
+
+    password.addEventListener('change', addError)
+    confirm.addEventListener('change', addError)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(Norse-Bold.otf);
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 13px;
+  height: 225px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid ghostwhite;
+  border-left: 0;
+  box-shadow: 0 5px 10px gray;
+}
+
+.error + span::before {
+  content: "* Passwords do not match";
+  color: red;
+  font-size: smaller;
+}
+
+input {
+  width: 260px;
+  height: 20px;
+  border-radius: 5px 5px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 5px 5px 10px gray;
+  border: 1px solid rgb(44, 44, 223);
+}
+
+input:invalid:not(:placeholder-shown) {
+  outline: none;
+  border: 1px solid red;
+}
+
+fieldset {
+  display: flex;
+  gap: 60px;
+}
+
+fieldset>div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 170px;
+}
+
+label {
+  color: rgb(41, 40, 40);
+  font-size: 13px;
+  font-weight: 550;
+}
+
+button {
+  margin-top: 25px;
+  width: 230px;
+  height: 40px;
+  background-color: #596D48;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px 10px;
+  border-top: 0;
+  border-left: 0;
+  box-shadow: 0 5px 10px gray;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
+
+.submit-buttons>p {
+  margin-top: 20px;
+}
+
+.form-message, fieldset {
+  margin-left: 35px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  width: max-content;
+  gap: 2px;
+}
+
+.form-message {
+  font-weight: 800;
+  margin-bottom: 12px;
+  font-size: large;
+  margin-top: 4px;
+}
+
+.submit-buttons {
+  flex: 1;
+  margin-left: 35px;
+}
+
+.logo {
+  display: flex;
+  background-color: rgba(0, 0, 0, .5);
+  height: 100px;
+  position: absolute;
+  bottom: 400px;
+  width: 367px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-family: norse-bold, sans-serif;
+  font-size: 4rem;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.introduction {
+  font-weight: 800;
+  margin-top: 100px;
+  margin-left: 35px;
+  width: 60%;
+}
+
+.background-img {
+  width: 367px;
+  height: inherit;
+}
+
+.left-side {
+  height: inherit;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(230, 230, 230);
+  flex: 1;
+  height: inherit;
+}
+
+.odin-img {
+  height: 80%;
+}
